@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Free Visit | Turf Works Atlanta</title>
+<meta name="description" content="Schedule a free quote visit online in under two minutes. Pick a day and time that works — Turf Works confirms by text or email.">
+<link rel="canonical" href="https://turfworksatl.com/book-a-visit.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M50 60 C 30 60 22 40 26 14 C 40 24 48 40 50 60 Z" fill="currentColor" opacity=".7"/>
+        <path d="M50 60 C 70 60 78 40 74 14 C 60 24 52 40 50 60 Z" fill="currentColor"/>
+        <path d="M50 60 C 44 44 46 26 50 10 C 54 26 56 44 50 60 Z" fill="currentColor" opacity=".85"/>
+      </svg>
+      <span class="brand-word">TURF <span>WORKS</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="our-work.html">Our Work</a>
+      <a href="service-areas.html">Service Areas</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <span class="nav-phone">(404) 555-0142</span>
+      <a href="book-a-visit.html" class="btn btn-gold" style="padding:11px 20px;font-size:13px;">Book a Visit</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="mono">Book a Visit</span>
+    <h1>Pick a day. We'll handle the rest.</h1>
+    <p>Free, no-obligation quote visit — pick an open slot below and you'll get a text and email confirmation right away.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="book-grid reveal">
+      <div class="cal-card">
+        <div class="cal-head">
+          <h3 id="calMonthLabel">Month Year</h3>
+          <div class="cal-nav">
+            <button id="calPrev" aria-label="Previous month">‹</button>
+            <button id="calNext" aria-label="Next month">›</button>
+          </div>
+        </div>
+        <div class="cal-grid" id="calGrid">
+          <div class="cal-dow">S</div><div class="cal-dow">M</div><div class="cal-dow">T</div>
+          <div class="cal-dow">W</div><div class="cal-dow">T</div><div class="cal-dow">F</div><div class="cal-dow">S</div>
+        </div>
+        <div class="slot-row" id="slotRow"></div>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:18px;">Sundays are reserved for existing accounts. Grayed slots are already booked.</p>
+      </div>
+
+      <div class="book-summary">
+        <div id="bookForm">
+          <h3>Your Visit</h3>
+          <div class="book-line"><span>Date</span><span id="sumDate">Select a date</span></div>
+          <div class="book-line"><span>Time</span><span id="sumTime">Select a time</span></div>
+          <form class="book-form" style="margin-top:22px;" onsubmit="return false;">
+            <label>Name</label>
+            <input type="text" placeholder="Jane Homeowner" required>
+            <label>Phone</label>
+            <input type="tel" placeholder="(404) 555-0100" required>
+            <label>Address</label>
+            <input type="text" placeholder="Street, City, ZIP" required>
+            <label>What do you need?</label>
+            <input type="text" placeholder="e.g. Weekly mowing, front yard redesign">
+            <button type="submit" id="bookSubmit" class="btn btn-gold" style="width:100%;margin-top:6px;" disabled>Confirm Visit</button>
+          </form>
+        </div>
+        <div class="confirm-box" id="confirmBox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          <h3 style="margin-bottom:8px;">Visit Requested</h3>
+          <p style="font-size:14px;opacity:.8;">We'll confirm by text and email shortly. In a live build, this connects directly to our scheduling system and blocks the slot in real time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 100 100" fill="none" style="width:30px;height:30px;color:var(--gold);">
+            <path d="M50 60 C 30 60 22 40 26 14 C 40 24 48 40 50 60 Z" fill="currentColor" opacity=".7"/>
+            <path d="M50 60 C 70 60 78 40 74 14 C 60 24 52 40 50 60 Z" fill="currentColor"/>
+            <path d="M50 60 C 44 44 46 26 50 10 C 54 26 56 44 50 60 Z" fill="currentColor" opacity=".85"/>
+          </svg>
+          <span class="brand-word">TURF <span>WORKS</span></span>
+        </a>
+        <p>Residential lawn care and landscape design for the Atlanta suburbs. Locally owned, locally run.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="services.html">Services</a></li><li><a href="our-work.html">Our Work</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li>Lawn Care</li><li>Landscape Design</li><li>Irrigation</li><li>Hardscaping</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:4045550142">(404) 555-0142</a></li><li><a href="mailto:hello@turfworksatl.com">hello@turfworksatl.com</a></li><li>Atlanta, GA</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Turf Works. All rights reserved.</span>
+      <span>Residential landscaping · Atlanta metro</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
